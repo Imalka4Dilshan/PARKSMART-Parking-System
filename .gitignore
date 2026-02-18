@@ -1,0 +1,44 @@
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# PHP
+*.log
+*.cache
+
+# Database backups
+*.sql.backup
+*.sql.gz
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Sensitive configuration (customize as needed)
+# config/db.php
+
+# User uploaded files (if any)
+uploads/
+files/
+
+# Composer
+vendor/
+composer.lock
+
+# Node modules (if using any)
+node_modules/
+
+# Environment files
+.env
+.env.local
+.env.*.local

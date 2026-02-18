@@ -1,0 +1,144 @@
+================================================================================
+      UPLOAD PARKSMART TO GITHUB USING CLI - STEP BY STEP GUIDE
+================================================================================
+
+STEP 1: INSTALL GIT
+-------------------
+1. Download page should open automatically
+2. Click "Download for Windows" (64-bit or 32-bit)
+3. Run the installer
+4. Use default settings (just keep clicking Next)
+5. Click "Install" and wait
+6. Click "Finish"
+7. CLOSE PowerShell and OPEN A NEW PowerShell window
+
+
+STEP 2: CONFIGURE GIT (ONE-TIME SETUP)
+---------------------------------------
+After installing Git, open NEW PowerShell and run:
+
+git config --global user.name "Imalka4Dilshan"
+git config --global user.email "imalkadilshan1233@gmail.com"
+
+
+STEP 3: NAVIGATE TO PROJECT FOLDER
+-----------------------------------
+cd "c:\xampp\htdocs\my First project\parksmart_12-29"
+
+
+STEP 4: INITIALIZE GIT REPOSITORY
+----------------------------------
+git init
+
+
+STEP 5: ADD ALL FILES
+---------------------
+git add .
+
+
+STEP 6: CREATE FIRST COMMIT
+---------------------------
+git commit -m "Initial commit: Complete ParkSmart Parking Management System"
+
+
+STEP 7: ADD REMOTE REPOSITORY
+------------------------------
+git remote add origin https://github.com/Imalka4Dilshan/PARKSMART-Parking-System.git
+
+
+STEP 8: SET MAIN BRANCH
+-----------------------
+git branch -M main
+
+
+STEP 9: PUSH TO GITHUB
+----------------------
+git push -u origin main
+
+(You may be asked to login to GitHub - enter your credentials)
+
+
+STEP 10: VERIFY UPLOAD
+----------------------
+Open: https://github.com/Imalka4Dilshan/PARKSMART-Parking-System
+Refresh the page - you should see all your files!
+
+
+================================================================================
+ALL COMMANDS IN ONE BLOCK (Copy & Paste After Git Installation):
+================================================================================
+
+git config --global user.name "Imalka4Dilshan"
+git config --global user.email "imalkadilshan1233@gmail.com"
+cd "c:\xampp\htdocs\my First project\parksmart_12-29"
+git init
+git add .
+git commit -m "Initial commit: Complete ParkSmart Parking Management System"
+git remote add origin https://github.com/Imalka4Dilshan/PARKSMART-Parking-System.git
+git branch -M main
+git push -u origin main
+
+
+================================================================================
+FOR FUTURE UPDATES (After Initial Upload):
+================================================================================
+
+1. Navigate to project:
+   cd "c:\xampp\htdocs\my First project\parksmart_12-29"
+
+2. Add changes:
+   git add .
+
+3. Commit with message:
+   git commit -m "Updated features"
+
+4. Push to GitHub:
+   git push
+
+
+================================================================================
+TROUBLESHOOTING:
+================================================================================
+
+Problem: "git: command not found" after installing
+Solution: Close PowerShell and open NEW PowerShell window
+
+Problem: "remote origin already exists"
+Solution: Run: git remote remove origin
+         Then: git remote add origin https://github.com/Imalka4Dilshan/PARKSMART-Parking-System.git
+
+Problem: Authentication required
+Solution: Enter your GitHub username and password when prompted
+         OR use GitHub Personal Access Token instead of password
+
+Problem: "fatal: not a git repository"
+Solution: Make sure you're in correct folder and run: git init
+
+Problem: Push rejected
+Solution: Run: git pull origin main --allow-unrelated-histories
+         Then: git push -u origin main
+
+
+================================================================================
+IMPORTANT NOTES:
+================================================================================
+
+✓ Make sure Git is installed before running commands
+✓ Close and reopen PowerShell after Git installation
+✓ All your project files will be uploaded to GitHub
+✓ Repository will be public (anyone can see the code)
+✓ README.md will be displayed on GitHub homepage
+
+
+================================================================================
+READY TO START? 
+================================================================================
+
+1. Install Git from the download page that opened
+2. Close this PowerShell window
+3. Open NEW PowerShell
+4. Copy and paste the command block above
+5. Press Enter and wait for upload to complete
+
+Good luck! 🚀
+================================================================================

@@ -1,0 +1,79 @@
+# ParkSmart - GitHub Upload Guide
+
+## Method 1: Manual Upload (No Git Required)
+
+1. Go to: https://github.com/Imalka4Dilshan/PARKSMART-Parking-System
+2. Click "Add file" → "Upload files"
+3. Drag all project files from: c:\xampp\htdocs\my First project\parksmart_12-29
+4. Commit message: "Initial commit: Complete ParkSmart Parking System"
+5. Click "Commit changes"
+
+## Method 2: Using Git Commands (Recommended)
+
+### First Time Setup:
+
+1. Download Git: https://git-scm.com/download/win
+2. Install Git (use default settings)
+3. Open PowerShell in project folder
+4. Run these commands:
+
+```bash
+# Navigate to project
+cd "c:\xampp\htdocs\my First project\parksmart_12-29"
+
+# Initialize Git repository
+git init
+
+# Add all files
+git add .
+
+# Create first commit
+git commit -m "Initial commit: Complete ParkSmart Parking System"
+
+# Add remote repository
+git remote add origin https://github.com/Imalka4Dilshan/PARKSMART-Parking-System.git
+
+# Push to GitHub
+git branch -M main
+git push -u origin main
+```
+
+### For Future Updates:
+
+```bash
+# After making changes to your project
+cd "c:\xampp\htdocs\my First project\parksmart_12-29"
+
+# Add changes
+git add .
+
+# Commit with message
+git commit -m "Description of your changes"
+
+# Push to GitHub
+git push
+```
+
+## Files Created:
+✅ README.md - Professional project documentation
+✅ .gitignore - Excludes unnecessary files
+✅ PROJECT_REPORT_SIMPLE.txt - Detailed project report
+
+## Important Notes:
+
+1. **Database Password**: Make sure to update config/db.php with placeholder if sharing publicly
+2. **API Keys**: Consider using environment variables for sensitive data
+3. **Repository is Public**: Anyone can see your code
+
+## Quick Commands Reference:
+
+```bash
+git status          # Check what changed
+git add .           # Add all changes
+git commit -m ""    # Save changes
+git push            # Upload to GitHub
+git pull            # Download updates
+```
+
+---
+Happy Coding! 🚀
